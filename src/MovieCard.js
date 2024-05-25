@@ -22,7 +22,7 @@ function MovieCard(props) {
     const fetchMovies = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/adarsh4develop/Movie/public/movies.json"
+          "https://raw.githubusercontent.com/adarsh4develop/Movie/main/public/movies-250.json"
         );
         const data = await response.json();
         const shuffledMovies = shuffleArray(data.movies);
