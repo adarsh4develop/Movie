@@ -21,7 +21,9 @@ function MovieCard(props) {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await fetch("/movies-250.json");
+        const response = await fetch(
+          "https://raw.githubusercontent.com/adarsh4develop/Movie/public/movies.json"
+        );
         const data = await response.json();
         const shuffledMovies = shuffleArray(data.movies);
         console.log(data.movies);
